@@ -1,1 +1,71 @@
-
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		///////EJER1public static void Main()
+	//{
+		//Console.WriteLine("bienvenido a la materia de estructura de datos");
+	//}
+		//////////////////////////////////////////////////////////////////////////////////
+	   //EJER2public static void Main()
+	//{
+		//int numero1 ,numero2, numero3;
+		//Console.WriteLine("ingresar el primer numero");
+		//numero1=int.Parse(Console.ReadLine());
+		
+		//Console.WriteLine("ingresar el segundo numero");
+		//numero2=int.Parse(Console.ReadLine());
+		
+		//Console.WriteLine("ingresar el tercer numero");
+		//numero3=int.Parse(Console.ReadLine());
+		
+		//Console.Write("la suma de los tres valores es de: " + (numero1 + numero2 + numero3));	
+	//}
+		/////////////////////////////////////////////////////////////////////////////////////////////////
+		   //EJER3public static void Main()
+	//{
+		//int numero1 ,numero2, numero3;
+		//Console.WriteLine("ingresar el primer numero");
+		//numero1=int.Parse(Console.ReadLine());
+		
+		//Console.WriteLine("ingresar el segundo numero");
+		//numero2=int.Parse(Console.ReadLine());
+		
+		//Console.WriteLine("ingresar el tercer numero");
+		//numero3=int.Parse(Console.ReadLine());
+		
+		//Console.Write("la suma de los tres valores es de: " + (numero1 + numero2 + numero3));	
+	//}
+		///////////////////////////////////////////////////////////////////////////////////////
+		//EJER4public static void Main()
+	//{
+		//for (int x = 1; x <= 15; x++)
+			//Console.Write(x+ "\t");
+	//}
+		///////////////////////////////////////////////////////////////////////////////////
+		//EJER5	public static void Main()
+	//{
+		//int numero ,contadorPar = 0, contadorImpar = 0;
+		
+		//Console.WriteLine("ingresar un numero");
+		//numero= int.Parse(Console.ReadLine());
+		
+		//while (numero != 0) 
+		//{
+			//if (numero % 2 == 0)
+			//{
+				//contadorPar = contadorPar + 1;
+			//}	
+			//else 
+			//{	
+			//contadorImpar = contadorImpar + 1;
+			//}
+			//Console.Write("ingresar un numero: ");
+			//numero = int.Parse(Console.ReadLine());
+		//}
+		//Console.Write("cantidad de pares: " + contadorPar + "contadorImpar: " + contadorImpar);
+	//}
+	}
+}
