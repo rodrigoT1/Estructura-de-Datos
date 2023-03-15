@@ -1,0 +1,50 @@
+package manejo_de_pilas;
+public class Main {
+    public static void main(String[] args) {
+        int[] edad = new int[5];
+        edad[0] = 33;
+        edad[1] =20;
+        edad[2]=19;
+        edad[3]=42;
+        edad[4]=25;
+
+        edades obj1 = new edades("UMSA", "EDD", edad);
+
+
+        determinaEdadMayor(obj1);
+
+        numeroPar(obj1);
+
+        obj1.mostrar();
+    }
+    public static void determinaEdadMayor(edades obj1){
+        int[] edad = obj1.getEdades();
+
+
+        int mayor = edad[0];
+
+        for (int i = 1; i < edad.length; i++) {
+            if (edad[i] > mayor) {
+                mayor = edad[i];
+            }
+        }
+
+        System.out.println("El mayor es: " + mayor);
+
+    }
+
+    public static void numeroPar(edades obj1){
+
+        int[] edad = obj1.getEdades();
+
+        for(int i = 0; i < edad.length; i++)
+        {
+            if(edad[i]%2 == 0)
+            {
+                edad[i] = edad[i]+5;
+
+            }
+        }
+        obj1.setEdades(edad);
+    }
+}
