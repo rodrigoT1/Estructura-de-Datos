@@ -1,0 +1,49 @@
+package pilas;
+
+public class Edades {
+    private String universidad;
+    private String paralelo;
+    private int[] edades;
+
+    // click derecho - genearate - constructor
+    public Edades(String universidad, String paralelo, int[] edades) {
+        this.universidad = universidad;
+        this.paralelo = paralelo;
+        this.edades = edades;
+    }
+
+    // click derecho - genearate - getter
+
+    public String getUniversidad() {
+        return universidad;
+    }
+
+    public String getParalelo() {
+        return paralelo;
+    }
+
+    public int[] getEdades() {
+        return edades;
+    }
+    //valores
+    public void setUniversidad(String universidad){
+        this.universidad = universidad;
+    }
+    public void setParalelo(String paralelo){
+        this.paralelo = paralelo;
+    }
+    public void setEdades(int[] edades){
+        this.edades = edades;
+    }
+
+    public void mostrar(){
+        System.out.println("mostrando clases de edades");
+        System.out.println("universidad: " + this.getUniversidad());
+        System.out.println("paralelo: " + this.getParalelo());
+
+        for (int i = 0; i < this.getEdades().length; i++){
+            System.out.print(this.edades[i] + ", ");
+        }
+        System.out.println();
+    }
+}
