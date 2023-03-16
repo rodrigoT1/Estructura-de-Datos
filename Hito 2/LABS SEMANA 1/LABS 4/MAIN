@@ -1,0 +1,20 @@
+package pilas;
+
+public class Main {
+
+    ///////////////////////////////////////////////////////////////////////////////////////////
+    public static void nombres(String [] args){
+        String[] nombresEDD = new String[5];
+
+        nombresEDD [0]="anna";
+        nombresEDD [1]="juan";
+        nombresEDD [2]="pepito";
+        nombresEDD [3]="carla";
+        nombresEDD [4]="freddy";
+
+        Nombres edd = new Nombres("EDD", nombresEDD);
+        cuentaNombres(edd);
+    }
+    public static void cuentaNombres(Nombres nombresEDD){
+    }
+}
