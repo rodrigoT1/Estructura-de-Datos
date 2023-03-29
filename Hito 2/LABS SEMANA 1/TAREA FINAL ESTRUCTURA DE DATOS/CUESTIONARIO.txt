@@ -1,0 +1,179 @@
+Manejo de conceptos.
+
+1. ¿A que se refiere cuando se habla de POO?
+R: "Programación Orientada a Objetos" y es un paradigma de programación que se centra 
+en la creación y manipulación de objetos para resolver problemas de software
+se basa en cuatro conceptos fundamentales: encapsulamiento, herencia, polimorfismo y abstracción.
+
+2. ¿Cuáles son los 4 componentes que componen POO?
+R:Clases, Objetos, Atributos, Métodos
+
+3. ¿Cuáles son los pilares de POO?.
+R:Abstracción,Encapsulamiento, Polimorfismo, Herencia
+
+4. ¿Qué es Encapsulamiento y muestre un ejemplo?
+R:permite ocultar la complejidad interna de un objeto y exponer solo los métodos y atributos 
+necesarios para interactuar con éL
+
+EJEMPLO:
+
+class CuentaBancaria {
+  private double saldo;
+  private String numeroCuenta;
+  
+  public CuentaBancaria(double saldoInicial, String numeroCuenta) {
+    this.saldo = saldoInicial;
+    this.numeroCuenta = numeroCuenta;
+  }
+  
+  public double obtenerSaldo() {
+    return this.saldo;
+  }
+  
+  public void depositar(double cantidad) {
+    this.saldo += cantidad;
+  }
+  
+  public void retirar(double cantidad) {
+    if (cantidad <= this.saldo) {
+      this.saldo -= cantidad;
+    }
+    else {
+      System.out.println("Error: fondos insuficientes");
+    }
+  }
+}
+
+5. ¿Qué es Abstracción y muestre un ejemplo?
+R: permite representar conceptos complejos en un modelo simplificado, enfocándose en los aspectos 
+más relevantes y omitiendo los detalles irrelevantes.
+
+EJEMPLO:
+
+public abstract class Vehiculo {
+  protected String marca;
+  protected String modelo;
+  protected int anyo;
+  protected double velocidadMaxima;
+  
+  public Vehiculo(String marca, String modelo, int anyo, double velocidadMaxima) {
+    this.marca = marca;
+    this.modelo = modelo;
+    this.anyo = anyo;
+    this.velocidadMaxima = velocidadMaxima;
+  }
+  
+  public abstract void acelerar(double cantidad);
+  
+  public abstract void frenar(double cantidad);
+  
+  public String obtenerMarca() {
+    return this.marca;
+  }
+  
+  public String obtenerModelo() {
+    return this.modelo;
+  }
+  
+  public int obtenerAnyo() {
+    return this.anyo;
+  }
+  
+  public double obtenerVelocidadMaxima() {
+    return this.velocidadMaxima;
+  }
+}
+
+6. ¿Que es Herencia y muestre un ejemplo?
+R: permite crear nuevas clases basadas en clases existentes, reutilizando el código y las características de la clase origina
+
+EJEMPLO:
+
+public class Persona {
+  protected String nombre;
+  protected int edad;
+  
+  public Persona(String nombre, int edad) {
+    this.nombre = nombre;
+    this.edad = edad;
+  }
+  
+  public String obtenerNombre() {
+    return this.nombre;
+  }
+  
+  public int obtenerEdad() {
+    return this.edad;
+  }
+}
+
+public class Estudiante extends Persona {
+  private int codigoEstudiante;
+  private String carrera;
+  
+  public Estudiante(String nombre, int edad, int codigoEstudiante, String carrera) {
+    super(nombre, edad);
+    this.codigoEstudiante = codigoEstudiante;
+    this.carrera = carrera;
+  }
+  
+  public int obtenerCodigoEstudiante() {
+    return this.codigoEstudiante;
+  }
+  
+  public String obtenerCarrera() {
+    return this.carrera;
+  }
+}
+
+7. ¿Qué es Polimorfismo y muestre un ejemplo?
+R:permite que objetos de diferentes clases sean tratados de manera uniforme, permitiendo que un objeto pueda tener múltiples 
+formas o comportamientos dependiendo del contexto en el que se utilice.
+
+EJEMPLO:
+
+public class Animal {
+  public void hacerSonido() {
+    System.out.println("Haciendo sonido genérico de animal");
+  }
+}
+
+public class Perro extends Animal {
+  @Override
+  public void hacerSonido() {
+    System.out.println("Guau guau");
+  }
+}
+
+public class Gato extends Animal {
+  @Override
+  public void hacerSonido() {
+    System.out.println("Miau miau");
+  }
+}
+
+8. Que es un ARRAY?
+R: Un array es una estructura de datos que contiene una colección de elementos del mismo tipo de datos, donde cada elemento se almacena 
+en una posición o índice específico dentro del array. Los arrays son utilizados comúnmente en la programación para almacenar y manipular colecciones de datos de manera eficiente.
+
+EJEMPLO:
+
+int[] numeros = new int[5];
+numeros[0] = 10;
+
+9. ¿Qué son los paquetes en JAVA?
+R: En Java, los paquetes (packages) son una forma de organizar y estructurar los archivos de código fuente y las clases en grupos
+lógicos y coherentes.
+
+10.¿Cómo se define una clase main en JAVA y muestra un ejemplo?
+R:En Java, la clase "main" es la clase principal que se ejecuta cuando se inicia un programa. La clase "main" contiene el método "main()", que es el punto de entrada del programa y es 
+donde comienza la ejecución del mismo. La definición de una clase "main" es muy sencilla en Java.
+
+EJEMPLO:
+
+public class MiPrograma {
+    public static void main(String[] args) {
+        // Código de inicio del programa
+        System.out.println("Hola, mundo!");
+    }
+}
