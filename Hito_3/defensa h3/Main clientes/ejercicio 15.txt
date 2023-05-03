@@ -1,0 +1,18 @@
+////////////////////////////////////////EJERCICIO 15/////////////////////////////////////////////////////////////
+
+    public static void ordenarPila(PilaClientes pila){
+        PilaClientes aux = new PilaClientes();
+        Clientes deletecliente = null;
+        PilaClientes almacenar = new PilaClientes();
+
+        while(! pila.esVacio()){
+            deletecliente= pila.eliminar();
+            if(deletecliente.getGenero().equals("FEMENINO")){
+                almacenar.adicionar(deletecliente);
+            }else{
+                aux.adicionar(deletecliente);
+            }
+        }
+        pila.vaciar(aux);
+        pila.vaciar(almacenar);
+    }

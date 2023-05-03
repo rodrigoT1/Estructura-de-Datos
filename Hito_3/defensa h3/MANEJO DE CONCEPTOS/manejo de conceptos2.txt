@@ -1,0 +1,100 @@
+MANEJO DE CONCEPTOS
+NOMBRE: RODRIGO CRISTHIAN TORREZ DE LA CRUZ
+
+1. ¿A que se refiere cuando se habla de ESTRUCTURA DE DATOS?
+la organización de datos en una computadora o sistema informático,
+es una forma de organizar y almacenar datos en una computadora de 
+manera que se puedan acceder y utilizar eficientemente.
+
+2. ¿Cuáles son los TIPOS DE ESTRUCTURA QUE EXISTE?
+Existen muchos tipos diferentes de estructuras de datos, y son las siguientes de la 
+estructuras de datos:
+
+- Matrices (Arrays): Una estructura de datos que almacena elementos del 
+mismo tipo en una serie de posiciones de memoria contiguas.
+
+- Listas Enlazadas (Linked Lists): Una estructura de datos que almacena 
+elementos en nodos que contienen un valor y un puntero al siguiente nodo.
+
+- Pilas (Stacks): Una estructura de datos que sigue el principio LIFO (Last 
+In First Out) donde el último elemento agregado es el primero en ser eliminado.
+
+- Colas (Queues): Una estructura de datos que sigue el principio FIFO (First 
+In First Out) donde el primer elemento agregado es el primero en ser eliminado.
+
+- Árboles (Trees): Una estructura de datos jerárquica que consta de nodos 
+conectados por ramas, donde cada nodo tiene un padre (excepto el nodo raíz) y 
+cero o más hijos.
+
+- Grafos (Graphs): Una estructura de datos que consta de un conjunto de vértices 
+y un conjunto de aristas que conectan esos vértices.
+
+- Conjuntos (Sets): Una estructura de datos que almacena una colección de elementos 
+únicos sin orden específico.
+
+- Mapas (Maps): Una estructura de datos que almacena pares clave-valor, donde cada 
+clave está asociada con un valor.
+
+3. ¿Apoyándose en el link adjunto, explique, por qué son útiles las estructuras
+de datos?
+las estructuras de datos son una forma de organizar datos en una computadora para 
+que se puedan acceder y manipular de manera eficiente. Dependiendo del tipo de datos 
+y operaciones que se deban realizar, diferentes estructuras de datos pueden ser más 
+adecuadas que otras.
+
+es necesario conocer que varias estructuras de datos diferentes, como matrices, listas 
+enlazadas, árboles, grafos, pilas, colas, conjuntos, mapas y otros, para poder seleccionar 
+la estructura de datos adecuada para cada problema específico.
+
+4. ¿Qué es una PILA?
+una pila es una colección de elementos que sigue el principio LIFO (Last In First Out), es 
+decir, el último elemento que se agregó a la pila es el primero que se elimina. Es una estructura 
+de datos lineal que se utiliza para almacenar una secuencia de elementos y realizar operaciones de 
+inserción y eliminación en la cima de la pila.
+
+se puede implementar utilizando una estructura de datos dinámica, como una lista enlazada, o una 
+estructura de datos estática, como un arreglo.
+
+5. ¿Qué es STACK en JAVA, una STACK será lo mismo que una PILA?
+En Java, la clase Stack es una implementación de la estructura de datos Pila (Stack en inglés) que 
+proporciona métodos para realizar operaciones push, pop, peek y isEmpty en una pila.
+
+Aunque la clase Stack en Java es útil y fácil de usar, es importante tener en cuenta que debido a que 
+se basa en la clase Vector, que es una estructura de datos dinámica, puede tener un impacto en el rendimiento 
+si se usa para aplicaciones que requieren una gran cantidad de operaciones push y pop
+
+
+6. ¿Qué es TOPE en una PILA?
+se refiere al elemento que se encuentra en la cima de la pila.
+
+El tope de la pila es el elemento que se agregó más recientemente y es el único elemento que se puede acceder o 
+eliminar en una pila, ya que una pila sigue el principio LIFO (Last In First Out), lo que significa que el último 
+elemento que se agregó es el primero en ser eliminado.
+
+7. ¿Qué es MAX en una PILA?
+el término "MAX" se refiere a la capacidad máxima de la pila, es decir, el número máximo de elementos que se pueden 
+almacenar en la pila.
+
+Es importante tener en cuenta que la capacidad máxima de una pila puede variar según el tamaño de la memoria disponible 
+en el sistema y puede ser limitada por la capacidad de almacenamiento de la estructura de datos utilizada para implementar 
+la pila. Por lo tanto, se recomienda tener en cuenta el tamaño de la pila y evitar desbordamientos de memoria al trabajar con 
+pilas en aplicaciones de programación.
+
+8. ¿A que se refiere los métodos esVacia() y esLLena() en una PILA?
+El método "esVacia()" se utiliza para verificar si la pila no tiene elementos, es decir, si está vacía. Este método devuelve un 
+valor booleano (verdadero o falso) que indica si la pila está vacía o no.
+
+El método "esLLena()" se utiliza para verificar si la pila ha alcanzado su capacidad máxima, es decir, si está llena. Sin embargo, 
+es importante tener en cuenta que en algunas implementaciones de pila, como en la pila basada en una lista enlazada, no hay un límite 
+fijo en la cantidad de elementos que se pueden agregar a la pila. 
+
+9. ¿Qué son los métodos estáticos en JAVA?
+En Java, los métodos estáticos son aquellos que se pueden llamar sin tener que crear una instancia de la clase en la que se definen. 
+Se identifican por la palabra clave "static" que se coloca delante del nombre del método.
+
+10.¿A través de un gráfico, muestre los métodos mínimos que debería de tener
+una PILA?
+
+
+
+grafico en el siguiente GitHub (GRAFICO DEL 10)

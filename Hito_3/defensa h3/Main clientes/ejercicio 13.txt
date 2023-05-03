@@ -1,0 +1,19 @@
+///////////////////////////////////////EJERCICIO 13//////////////////////////////////////////////////////
+
+    public static void kEsimoPosicion(PilaClientes pila, int valorTope){
+        PilaClientes aux = new PilaClientes();
+        Clientes clienteseliminado = null;
+        Clientes alamacenador = null;
+
+        while(!pila.esVacio()){
+            clienteseliminado = pila.eliminar();
+
+            if(pila.nroElem() + 1 == valorTope ){
+                alamacenador = clienteseliminado;
+            }else{
+                aux.adicionar(clienteseliminado);
+            }
+        }
+        pila.vaciar(aux);
+        pila.adicionar(alamacenador);
+    }

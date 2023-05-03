@@ -1,0 +1,14 @@
+////////////////////////////////////////EJERCICIO 14/////////////////////////////////////////////////////////////
+
+    public static void CambioDeDireccion(PilaClientes pila, String DIRECCION){
+        PilaClientes aux = new PilaClientes();
+        Clientes clientesliminado = null;
+        while(!pila.esVacio()){
+            clientesliminado=pila.eliminar();
+            if(clientesliminado.getGenero().equals("femenino")){
+                clientesliminado.setDireccion(DIRECCION);
+            }
+            aux.adicionar(clientesliminado);
+        }
+        pila.vaciar(aux);
+    }
